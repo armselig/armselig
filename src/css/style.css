@@ -8,11 +8,13 @@
   --color__secondary: var(--color__white);
   --color__tertiary: coral;
 
-  /* Fonts */
+  /* Fonts & Typography */
   --font__sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font__serif: Georgia, Cambria, 'Times New Roman', Times, serif;
   --font__mono: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --font__weight: 400;
+  --font__weight--bold: 600;
 
   /* Spacing */
   --spacing--lg: 6.4rem;
@@ -47,7 +49,13 @@ body {
   color: var(--color__primary);
   background-color: var(--color__secondary);
   font-family: var(--font__sans);
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: var(--font__weight);
+}
+
+h1 {
+  font-weight: inherit;
+  font-size: 160%;
 }
 
 a:link,
@@ -61,6 +69,13 @@ a:visited {
 img {
   max-width: 100%;
   height: auto;
+}
+
+
+/*** LAYOUT ******************************************************************/
+body {
+  display: flex;
+  justify-content: center;
 }
 
 /*** UTILITIES & HELPERS *****************************************************/
