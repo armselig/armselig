@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-      Hendrik Neumann ▞ Content Manager &amp; Frontend Developer ▞ Köln
+      Hendrik Neumann://Content Manager/Frontend Developer.Köln
     </title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="canonical" href="https://neumann.hendrik.koeln/" />
     <meta name="description" content="Hendrik Neumann ist ein Content Manager und Frontend Developer aus Köln." />
     <meta property="og:type" content="website" />
@@ -20,22 +22,28 @@
     <meta name="twitter:image" content="https://neumann.hendrik.koeln/hendrik-twitter.jpg" />
   </head>
   <body>
-    <div class="container">
-      <header class="person">
-        <img class="person__photo" src="img/hendrik-img8bit.gif" alt="Photo of Hendrik Neumann" />
-        <h1 class="person__name">Hendrik Neumann</h1>
-        <p class="person__tagline">Content() in this.frontend;</p>
-      </header>
-      <main>
+    <header id="header" class="person">
+      <img class="person__photo" src="img/hendrik-img8bit.gif" alt="Photo of Hendrik Neumann" />
+      <h1 class="person__name">Hendrik Neumann</h1>
+      <p class="person__tagline">
+        Content<span style="color: var(--color__tertiary);">()</span>
+        <span style="color: var(--color__quinary);">in this</span
+        ><span style="color: var(--color__tertiary);">.</span>frontend<span style="color: var(--color__tertiary);"
+          >;</span
+        >
+      </p>
+    </header>
+    <main id="main">
+      <section id="contact">
         <ul class="contact__list">
-          <li class="contact__item">
-            <a href="mailto:neumann@hendrik.koeln" title="E-Mail an Hendrik Neumann schreiben"
-              ><span class="ico">📧</span> neumann@hendrik.koeln</a
-            >
-          </li>
           <li class="contact__item">
             <a href="http://4sq.com/4nIFNc" title="Externe Seite: Adresse bei Foursquare"
               ><span class="ico">📮</span> D-50969 Köln</a
+            >
+          </li>
+          <li class="contact__item">
+            <a href="mailto:neumann@hendrik.koeln" title="E-Mail an Hendrik Neumann schreiben"
+              ><span class="ico">📧</span> neumann@hendrik.koeln</a
             >
           </li>
           <li class="contact__item">
@@ -49,12 +57,21 @@
             >
           </li>
         </ul>
+      </section>
+      <section id="testimonials">
         <blockquote class="testimonial">
           <p class="testimonial__quote">★★★★★ von ☆☆☆☆☆ deluxe</p>
           <footer class="testimonial__source">Niemand jemals</footer>
         </blockquote>
-      </main>
-    </div>
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">
+            Er sagte, wenn ich kein nettes Zitat für seine Webseite liefere, löscht er unseren Online-Shop.
+          </p>
+          <footer class="testimonial__source">Begeisterter Kunde</footer>
+        </blockquote>
+      </section>
+    </main>
+    <footer id="footer">Made with <abbr title="Liebe">♥</abbr> in Cologne</footer>
     <script type="application/ld+json">
       {
         "@context": "http://www.schema.org",
