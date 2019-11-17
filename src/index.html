@@ -11,31 +11,39 @@
   </head>
   <body>
     <div class="container">
-      <!-- welcome.gif -->
-      <img src="img/hendrik-img8bit.gif" alt="Photo of Hendrik Neumann" />
-      <h1>Hendrik Neumann</h1>
-      <p>Content() in this.frontend</p>
-      <ul>
-        <li>
-          <a href="mailto:neumann@hendrik.koeln" title="E-Mail an Hendrik Neumann schreiben"
-            ><span class="ico">📧</span> neumann@hendrik.koeln</a
-          >
-        </li>
-        <li><span class="ico">📮</span> D-50969 Köln</li>
-        <li>
-          <a href="https://twitter.com/armselig" title="Externe Seite: @armselig bei Twitter"
-            ><img class="ico" src="img/ico-twitter-svgrepo-com.svg" alt="" /> Twitter</a
-          >
-        </li>
-        <li>
-          <a href="http://www.linkedin.com/in/hneumann" title="Externe Seite: Hendrik Neumann bei LinkedIn"
-            ><img class="ico" src="img/ico-linkedin-svgrepo-com.svg" alt="" /> LinkedIn</a
-          >
-        </li>
-      </ul>
-      <blockquote>
-        ★★★★★ von ☆☆☆☆☆ deluxe
-      </blockquote>
+      <header class="person">
+        <img class="person__photo" src="img/hendrik-img8bit.gif" alt="Photo of Hendrik Neumann" />
+        <h1 class="person__name">Hendrik Neumann</h1>
+        <p class="person__tagline">Content() in this.frontend;</p>
+      </header>
+      <main>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <a href="mailto:neumann@hendrik.koeln" title="E-Mail an Hendrik Neumann schreiben"
+              ><span class="ico">📧</span> neumann@hendrik.koeln</a
+            >
+          </li>
+          <li class="contact__item">
+            <a href="http://4sq.com/4nIFNc" title="Externe Seite: Adresse bei Foursquare"
+              ><span class="ico">📮</span> D-50969 Köln</a
+            >
+          </li>
+          <li class="contact__item">
+            <a href="https://twitter.com/armselig" title="Externe Seite: @armselig bei Twitter"
+              ><img class="ico" src="img/ico-twitter-svgrepo-com.svg" alt="" /> Twitter</a
+            >
+          </li>
+          <li class="contact__item">
+            <a href="http://www.linkedin.com/in/hneumann" title="Externe Seite: Hendrik Neumann bei LinkedIn"
+              ><img class="ico" src="img/ico-linkedin-svgrepo-com.svg" alt="" /> LinkedIn</a
+            >
+          </li>
+        </ul>
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">★★★★★ von ☆☆☆☆☆ deluxe</p>
+          <footer class="testimonial__source">Niemand jemals</footer>
+        </blockquote>
+      </main>
     </div>
   </body>
 </html>

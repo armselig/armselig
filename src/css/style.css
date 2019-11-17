@@ -1,12 +1,14 @@
 /*** VARIABLES ***************************************************************/
 :root {
   /* Colors */
-  --color__black: #000;
-  --color__white: #fff;
+  --color__black: #020100;
+  --color__white: #fdfffc;
 
   --color__primary: var(--color__black);
   --color__secondary: var(--color__white);
-  --color__tertiary: coral;
+  --color__tertiary: #c1292e;
+  --color__quarternary: #235789;
+  --color__quinary: #519e8a;
 
   /* Fonts & Typography */
   --font__sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
@@ -20,6 +22,7 @@
   --spacing--lg: 6.4rem;
   --spacing--md: 3.2rem;
   --spacing--sm: 1.6rem;
+  --spacing--xs: 0.8rem;
 
   /* Breakpoints */
 }
@@ -54,8 +57,8 @@ body {
 }
 
 h1 {
+  font-size: inherit;
   font-weight: inherit;
-  font-size: 160%;
 }
 
 a:link,
@@ -71,11 +74,86 @@ img {
   height: auto;
 }
 
-
 /*** LAYOUT ******************************************************************/
 body {
   display: flex;
   justify-content: center;
+}
+
+/*** COMPONENTS **************************************************************/
+/* Personal information */
+.person {
+  margin-top: var(--spacing--xs);
+  text-align: center;
+}
+
+.person__photo {
+  max-width: 300px;
+  border-radius: 100%;
+}
+
+.person__name {
+  margin-top: var(--spacing--xs);
+  /* font-family: var(--font__serif); */
+  font-weight: var(--font__weight--bold);
+  font-size: 120%;
+}
+
+.person__tagline {
+  display: inline-block;
+  font-family: var(--font__mono);
+  font-size: 80%;
+  color: var(--color__secondary);
+  background-color: var(--color__quarternary);
+  padding: var(--spacing--xs);
+  margin-top: var(--spacing--xs);
+  border-radius: 1rem;
+}
+
+/* Contact information */
+.contact__list {
+  margin-top: var(--spacing--md);
+  list-style: none;
+}
+
+.contact__item {
+  margin-bottom: var(--spacing--xs);
+}
+
+.contact__item .ico {
+  margin-right: var(--spacing--xs);
+}
+
+/* Testimonial quotes */
+.testimonial__quote {
+  position: relative;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: var(--color__quarternary);
+  margin-top: var(--spacing--md);
+  padding: var(--spacing--sm) 0;
+  font-family: var(--font__serif);
+}
+
+.testimonial__quote::before {
+  position: absolute;
+  content: '\201C';
+  top: 0em;
+  left: 50%;
+  width: 4rem;
+  height: 3rem;
+  transform: translate(-50%, -80%);
+  color: var(--color__quarternary);
+  background-color: var(--color__secondary);
+  font-size: 8rem;
+  text-align: center;
+}
+
+.testimonial__source {
+  margin-top: var(--spacing--xs);
+  font-size: 80%;
+  font-style: italic;
+  text-align: center;
 }
 
 /*** UTILITIES & HELPERS *****************************************************/
