@@ -69,6 +69,10 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  border-bottom: 2px solid var(--color__tertiary);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -88,7 +92,7 @@ body {
   margin: 0 auto;
 }
 
-section {
+section:not(:first-child) {
   margin-top: var(--spacing--lg);
 }
 
