@@ -79,17 +79,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 0 var(--spacing--xs);
 }
 
-section:not(:first-child) {
-  /* margin-top: var(--spacing--lg); */
-}
-
 #footer {
   margin-top: var(--spacing--md);
-  font-family: var(--font__serif);
   font-size: small;
   text-align: center;
 }
