@@ -79,7 +79,7 @@ img {
 }
 
 /*** LAYOUT ******************************************************************/
-body {
+.container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -87,7 +87,7 @@ body {
   padding: 0 var(--spacing--xs);
 }
 
-#main {
+#main > * {
   max-width: 32rem;
   margin: 0 auto;
 }
@@ -148,8 +148,16 @@ section:not(:first-child) {
 }
 
 /* Testimonial quotes */
-.testimonial {
-  margin-top: var(--spacing--lg);
+.testimonial__container {
+  /* margin-top: var(--spacing--lg); */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.testimonial__block {
+  /* blockquote */
 }
 
 .testimonial__quote {
