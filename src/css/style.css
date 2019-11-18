@@ -65,12 +65,8 @@ a:link,
 a:active,
 a:hover,
 a:visited {
-  color: var(--color__tertiary);
+  display: inline-block;
   text-decoration: none;
-}
-
-a:hover {
-  border-bottom: 2px solid var(--color__tertiary);
 }
 
 img {
@@ -87,17 +83,12 @@ img {
   padding: 0 var(--spacing--xs);
 }
 
-#main > * {
-  max-width: 32rem;
-  margin: 0 auto;
-}
-
 section:not(:first-child) {
-  margin-top: var(--spacing--lg);
+  /* margin-top: var(--spacing--lg); */
 }
 
 #footer {
-  margin-top: var(--spacing--lg);
+  margin-top: var(--spacing--md);
   font-family: var(--font__serif);
   font-size: small;
   text-align: center;
@@ -126,8 +117,8 @@ section:not(:first-child) {
   display: inline-block;
   font-family: var(--font__mono);
   font-size: 80%;
-  color: var(--color__secondary);
-  background-color: var(--color__primary);
+  color: var(--color__quarternary);
+  background-color: transparent; /*var(--color__primary);*/
   padding: var(--spacing--xs);
   margin-top: var(--spacing--xs);
   border-radius: 1rem;
@@ -141,10 +132,26 @@ section:not(:first-child) {
 
 .contact__item {
   margin-bottom: var(--spacing--xs);
+  text-align: center;
 }
 
 .contact__item .ico {
   margin-right: var(--spacing--xs);
+}
+
+.contact__link {
+  min-width: 4.8rem;
+  width: 30rem;
+  min-height: 48px;
+  padding: var(--spacing--xs);
+  line-height: 3.2rem;
+  color: var(--color__secondary);
+  background-color: var(--color__tertiary);
+}
+
+.contact__link:active,
+.contact__link:hover {
+  background-color: var(--color__quinary);
 }
 
 /* Testimonial quotes */
@@ -153,11 +160,14 @@ section:not(:first-child) {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
+  justify-content: center;
 }
 
 .testimonial__block {
-  /* blockquote */
+  margin-top: var(--spacing--lg);
+  width: 100%;
+  max-width: 32rem;
+  padding: var(--spacing--xs);
 }
 
 .testimonial__quote {
