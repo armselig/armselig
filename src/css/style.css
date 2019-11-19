@@ -25,6 +25,7 @@
   --spacing--xs: 0.8rem;
 
   /* Breakpoints */
+  --screen--sm: 400px;
 }
 
 /*** BASIC RESET *************************************************************/
@@ -61,17 +62,26 @@ h1 {
   font-weight: inherit;
 }
 
-a:link,
-a:active,
-a:hover,
-a:visited {
+a {
+  color: var(--color__tertiary);
   display: inline-block;
   text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: var(--color__quinary);
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+abbr,
+acronym {
+  border: none;
+  text-decoration: none;
 }
 
 /*** LAYOUT ******************************************************************/
@@ -80,7 +90,12 @@ img {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
+  background: linear-gradient(var(--color__quinary), var(--color__secondary));
+  background-attachment: fixed; */
+}
+
+section > * {
   padding: 0 var(--spacing--xs);
 }
 
@@ -95,29 +110,34 @@ img {
 .person {
   margin-top: var(--spacing--xs);
   text-align: center;
+  position: relative;
 }
 
 .person__photo {
-  max-width: 300px;
-  border-radius: 100%;
+  width: 100%;
+  max-width: 60rem;
+}
+
+.person__text {
+  position: absolute;
+  bottom: var(--spacing--sm);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 24rem;
+  max-width: 32rem;
 }
 
 .person__name {
-  margin-top: var(--spacing--xs);
-  /* font-family: var(--font__serif); */
+  font-family: var(--font__sans);
   font-weight: var(--font__weight--bold);
   font-size: 120%;
 }
 
 .person__tagline {
-  display: inline-block;
-  font-family: var(--font__mono);
+  /* display: inline-block; */
   font-size: 80%;
-  color: var(--color__quarternary);
-  background-color: transparent; /*var(--color__primary);*/
-  padding: var(--spacing--xs);
+  color: var(--color__secondary);
   margin-top: var(--spacing--xs);
-  border-radius: 1rem;
 }
 
 /* Contact information */
@@ -147,6 +167,7 @@ img {
 
 .contact__link:active,
 .contact__link:hover {
+  color: var(--color__secondary);
   background-color: var(--color__quinary);
 }
 
@@ -206,4 +227,33 @@ img {
   width: 0.8em;
   height: 0.8em;
   font-size: 0.8em;
+}
+
+.screen {
+  max-width: 40rem;
+  margin: var(--spacing--sm) auto 0 auto;
+  padding: var(--spacing--xs);
+  color: var(--color__secondary);
+  background-color: var(--color__primary);
+  font-family: var(--font__mono);
+  border-radius: 1rem;
+}
+
+/*** MEDIA QUERIES ***********************************************************/
+@media (min-width: 600px) {
+  .person__photo {
+    width: 40rem;
+    border: 0rem solid var(--color__quarternary);
+    border-radius: 100%;
+    /* box-shadow: 0 .8rem 1.6rem var(--color__primary); */
+  }
+
+  .person__text {
+    /* position: initial; */
+    /* margin: 0 auto; */
+    /* left: 0; */
+    /* transform: translateX(0); */
+    /* margin-top: var(--spacing--sm); */
+    bottom: 0;
+  }
 }
