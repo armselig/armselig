@@ -42,7 +42,7 @@
 /*** BASE STYLES *************************************************************/
 *::selection {
   color: var(--color__secondary);
-  background-color: var(--color__primary);
+  background-color: var(--color__quinary);
 }
 
 html {
@@ -93,6 +93,11 @@ acronym {
   justify-content: center;
   background: linear-gradient(var(--color__quinary), var(--color__secondary));
   background-attachment: fixed; */
+}
+
+#header {
+  /* width: 100vw; */
+  /* height: 100vh; */
 }
 
 section > * {
