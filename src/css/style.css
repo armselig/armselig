@@ -105,7 +105,6 @@ section > * {
 /*** COMPONENTS **************************************************************/
 /* Personal information */
 .person {
-  margin-top: var(--spacing--xs);
   text-align: center;
   position: relative;
 }
@@ -249,6 +248,11 @@ section > * {
     clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
     box-shadow: 0 .16rem 8rem var(--color__primary);
   }
+
+  .person {
+    margin-top: var(--spacing--xs);
+  }
+
   .person__photo {
     transition: all .3s ease;
   }
