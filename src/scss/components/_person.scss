@@ -1,0 +1,31 @@
+/*** SHOW INFORMATION ABOUT A PERSON *****************************************/
+.person {
+  text-align: center;
+  position: relative;
+
+  &__photo {
+    width: 100%;
+    max-width: 60rem;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: var(--spacing--sm);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30rem;
+  }
+
+  &__name {
+    font-family: var(--font__sans);
+    font-weight: var(--font__weight--bold);
+    font-size: 120%;
+  }
+
+  &__tagline {
+    /* display: inline-block; */
+    font-size: 80%;
+    color: var(--color__secondary);
+    margin-top: var(--spacing--xs);
+  }
+}

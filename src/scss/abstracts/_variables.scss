@@ -1,0 +1,30 @@
+/*** (S)CSS VARIABLES ********************************************************/
+/* Breakpoints */
+$screen--sm: 600px;
+
+:root {
+  /* Colors */
+  --color__black: #020100;
+  --color__white: #fdfffc;
+
+  --color__primary: var(--color__black);
+  --color__secondary: var(--color__white);
+  --color__tertiary: #c1292e;
+  --color__quarternary: #235789;
+  --color__quinary: #519e8a;
+  --color__gradient: linear-gradient(160deg, var(--color__quarternary), var(--color__quinary));
+
+  /* Fonts & Typography */
+  --font__sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font__serif: Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font__mono: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --font__weight: 400;
+  --font__weight--bold: 600;
+
+  /* Spacing */
+  --spacing--lg: 6.4rem;
+  --spacing--md: 3.2rem;
+  --spacing--sm: 1.6rem;
+  --spacing--xs: 0.8rem;
+}

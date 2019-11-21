@@ -32,7 +32,8 @@
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-imagemin": "^3.0.0",
     "parcel-plugin-static-files-copy": "^2.2.1",
-    "rimraf": "^3.0.0"
+    "rimraf": "^3.0.0",
+    "sass": "^1.23.7"
   },
   "browserslist": [
     "defaults"
