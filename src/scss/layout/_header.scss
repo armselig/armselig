@@ -1,0 +1,40 @@
+/*** PAGE HEADER *************************************************************/
+@media (min-width: $screen--sm) {
+  #header {
+    padding: var(--spacing--md) 0 var(--spacing--md) 0;
+    background: var(--color__gradient);
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+    box-shadow: 0 0.16rem 8rem var(--color__primary);
+
+    .person {
+      margin-top: var(--spacing--xs);
+    }
+
+    .person__photo {
+      transition: all .3s ease;
+    }
+
+    .person__text {
+      transition: all .5s ease-out;
+    }
+
+    &:hover .person__photo {
+      filter: blur(2px);
+    }
+
+    &:hover .person__text {
+      transform: translate(-50%, -50%) scale(1.1);
+      letter-spacing: 1.2px;
+    }
+
+    .person__photo {
+      width: 40rem;
+      border: 0rem solid var(--color__quarternary);
+      border-radius: 100%;
+    }
+
+    .person__text {
+      bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/*** UTILITIES, HELPERS AND OTHER REUSABLE CLASSES ***************************/
+.ico {
+  /* https://www.svgrepo.com/vectors/social-media-compilation/ */
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  font-size: 0.8em;
+  transition: all 0.5s linear;
+}
+
+.screen {
+  max-width: 40rem;
+  margin: var(--spacing--sm) auto 0 auto;
+  padding: var(--spacing--xs);
+  color: var(--color__secondary);
+  background-color: var(--color__primary);
+  font-family: var(--font__mono);
+  border-radius: 1rem;
+}
