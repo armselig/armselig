@@ -1,0 +1,53 @@
+{
+  "@context": "http://www.schema.org",
+  "@type": "Person",
+  "name": "Hendrik Neumann",
+  "alternateName": "armselig",
+  "nationality": "German",
+  "birthPlace": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Detmold",
+      "addressRegion": "NRW",
+      "addressCountry": "Germany"
+    }
+  },
+  "gender": "Male",
+  "jobTitle": "IT Frontend Developer",
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "Digitas Pixelpark",
+      "sameAs": [
+        "https://www.digitaspixelpark.com/",
+        "https://www.linkedin.com/company/digitaspixelpark",
+        "https://www.instagram.com/digitaspixelpark"
+      ]
+    }
+  ],
+  "url": "https://neumann.hendrik.koeln/",
+  "image": "http://www.gravatar.com/avatar/75ca8e516ac26306b6a303668146adb2?s=300",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Cologne",
+    "addressRegion": "NRW",
+    "addressCountry": "Germany"
+  },
+  "sameAs": [
+    "https://twitter.com/armselig",
+    "https://instagram.com/armselig",
+    "https://www.facebook.com/hendrik.neumann",
+    "https://github.com/armselig",
+    "https://www.linkedin.com/in/hneumann",
+    "https://www.xing.com/profile/Hendrik_Neumann23",
+    "https://instagram.com/armselig",
+    "https://www.pinterest.de/armselig/",
+    "https://www.youtube.com/channel/UCXW8VLPxRSvu21erjouCObA",
+    "https://de.foursquare.com/armselig",
+    "https://henne.armselig.net/",
+    "https://d-64.org/mitglied/hendrik-neumann/",
+    "https://hendrik.koeln/",
+    "https://armselig.github.io/"
+  ]
+}

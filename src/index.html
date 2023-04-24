@@ -4,148 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>
-      Hendrik Neumann://Content Manager/Frontend Developer.Köln
-    </title>
-    <link rel="stylesheet" href="scss/main.scss" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="canonical" href="https://neumann.hendrik.koeln/" />
-    <meta name="description" content="Hendrik Neumann ist ein Content Manager und Frontend Developer aus Köln." />
+
+    <title>Hendrik Neumann - IT Frontend Developer aus Köln</title>
+
+    <link href="https://neumann.hendrik.koeln/" rel="canonical" />
+    <link href="scss/screen.scss" media="screen" rel="stylesheet" />
+    <link href="scss/print.scss" media="print" rel="stylesheet" />
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+
+    <meta
+      name="description"
+      content="Hendrik Neumann ist ein IT Frontend Developer aus Köln."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Hendrik Neumann | Content Manager & Frontend Developer" />
+    <meta
+      property="og:title"
+      content="Hendrik Neumann - IT Frontend Developer aus Köln"
+    />
     <meta property="og:url" content="https://neumann.hendrik.koeln/" />
-    <meta property="og:image" content="https://neumann.hendrik.koeln/hendrik-og.jpg" />
+    <meta
+      property="og:image"
+      content="https://neumann.hendrik.koeln/hendrik-og.jpg"
+    />
     <meta property="og:locale" content="de_DE" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Hendrik Neumann | Content Manager & Frontend Developer" />
+    <meta
+      name="twitter:title"
+      content="Hendrik Neumann - IT Frontend Developer aus Köln"
+    />
     <meta name="twitter:creator" content="@armselig" />
-    <meta name="twitter:image" content="https://neumann.hendrik.koeln/hendrik-twitter.jpg" />
-    <meta name="p:domain_verify" content="b70657e3b0a79e6704e81c2cc2849b64"/>
-    <script src="../node_modules/ie11-custom-properties/ie11CustomProperties.js"></script>
+    <meta
+      name="twitter:image"
+      content="https://neumann.hendrik.koeln/hendrik-twitter.jpg"
+    />
+    <meta name="p:domain_verify" content="b70657e3b0a79e6704e81c2cc2849b64" />
+
+    <script src="/schema.json" type="application/ld+json" async></script>
   </head>
-  <body class="container">
-    <header id="header">
-      <div class="person">
-        <picture>
-          <source type="image/webp" srcset="img/hendrik-img8bit.webp" />
-          <img class="person__photo" src="img/hendrik-img8bit.png" alt="Foto von Hendrik Neumann" />
-        </picture>
-        <div class="screen person__text">
-          <h1 class="person__name">Hendrik Neumann</h1>
-          <p class="person__tagline">
-            Content<span style="color: var(--color__tertiary);">()</span>
-            <span style="color: var(--color__quinary);">in this</span
-            ><span style="color: var(--color__tertiary);">.</span>frontend<span style="color: var(--color__tertiary);"
-              >;</span
-            >
-          </p>
-        </div>
-      </div>
+  <body>
+    <header>
+      <h1>Hendrik Neumann</h1>
     </header>
-    <main id="main">
-      <section id="contact" class="contact">
-        <ul class="contact__list">
-          <li class="contact__item">
-            <a class="contact__link" href="mailto:neumann@hendrik.koeln" title="E-Mail an Hendrik Neumann schreiben"
-              ><span class="ico">📧</span> neumann@hendrik.koeln</a
-            >
-          </li>
-          <li class="contact__item">
-            <a class="contact__link" href="https://twitter.com/armselig" title="Externe Seite: @armselig bei Twitter"
-              ><span class="ico">🐦</span> Twitter</a
-            >
-          </li>
-          <li class="contact__item">
-            <a
-              class="contact__link"
-              href="http://www.linkedin.com/in/hneumann"
-              title="Externe Seite: Hendrik Neumann bei LinkedIn"
-              ><span class="ico">🖇</span> LinkedIn</a
-            >
-          </li>
-        </ul>
-      </section>
-      <section id="testimonials" class="testimonial">
-        <blockquote class="testimonial__block">
-          <p class="testimonial__quote">★★★★★ von ☆☆☆☆☆ deluxe</p>
-          <footer class="testimonial__source">Quelle: Internet</footer>
-        </blockquote>
-        <blockquote class="testimonial__block">
-          <p class="testimonial__quote">
-            Wir sollten uns mehr auf unsere eigene Dummheit besinnen.
-          </p>
-          <footer class="testimonial__source">Martin P.</footer>
-        </blockquote>
-        <blockquote class="testimonial__block">
-          <p class="testimonial__quote">
-            Du bist so armselig&hellip;
-          </p>
-          <footer class="testimonial__source">Sinan S.</footer>
-        </blockquote>
-      </section>
-    </main>
-    <footer id="footer">
-      <p>Mit <abbr title="Liebe">♥</abbr> handgefertigt in
-      <a href="http://4sq.com/4nIFNc" title="Externe Seite: Adresse bei Foursquare">Köln-Zollstock</a>.</p>
-      <!-- <p><a href="https://github.com/armselig/neumann-hendrik-koeln" title="Externe Seite: Repository auf GitHub">Quelltext auf GitHub ansehen</a>.</p> -->
-    </footer>
-    <script type="application/ld+json">
-      {
-        "@context": "http://www.schema.org",
-        "@type": "Person",
-        "name": "Hendrik Neumann",
-        "alternateName": "armselig",
-        "nationality": "German",
-        "birthPlace": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Detmold",
-            "addressRegion": "NRW",
-            "addressCountry": "Germany"
-          }
-        },
-        "gender": "Male",
-        "jobTitle": "Content Manager & Frontend Developer",
-        "worksFor": [
-          {
-            "@type": "Organization",
-            "name": "Publicis Pixelpark",
-            "sameAs": [
-              "https://www.publicispixelpark.de/",
-              "https://www.facebook.com/publicispixelpark",
-              "https://twitter.com/pubpxp",
-              "https://www.linkedin.com/company/publicispixelpark/",
-              "https://www.instagram.com/publicispixelpark/"
-            ]
-          }
-        ],
-        "url": "https://neumann.hendrik.koeln/",
-        "image": "http://www.gravatar.com/avatar/75ca8e516ac26306b6a303668146adb2?s=300",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Cologne",
-          "addressRegion": "NRW",
-          "addressCountry": "Germany"
-        },
-        "sameAs": [
-          "https://twitter.com/armselig",
-          "https://instagram.com/armselig",
-          "https://www.facebook.com/hendrik.neumann",
-          "https://github.com/armselig",
-          "https://www.linkedin.com/in/hneumann",
-          "https://www.xing.com/profile/Hendrik_Neumann23",
-          "https://instagram.com/armselig",
-          "https://www.pinterest.de/armselig/",
-          "https://www.youtube.com/channel/UCXW8VLPxRSvu21erjouCObA",
-          "https://de.foursquare.com/armselig",
-          "https://henne.armselig.net/",
-          "https://hendrik.digital/",
-          "https://hendrik-neumann.dev/",
-          "https://d-64.org/mitglied/hendrik-neumann/"
-        ]
-      }
-    </script>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
